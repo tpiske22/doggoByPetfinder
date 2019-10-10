@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="horizontal">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/viewDogButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        app:backgroundTint="#00FFFFFF"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/detailDogImage"
+        app:layout_constraintEnd_toEndOf="@+id/detailDogImage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/detailDogImage"
+        app:layout_constraintTop_toTopOf="@+id/detailDogImage"
+        app:pressedTranslationZ="0dp"
+        app:rippleColor="#00FFFFFF" />
+
+    <ImageView
+        android:id="@+id/detailDogImage"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="Placeholder image for dog picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/doggo_placeholder" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:text="Spanky"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/detailDogImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/breedLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:text="Mut"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/detailDogImage"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <TextView
+        android:id="@+id/cityZipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:text="Young"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/detailDogImage"
+        app:layout_constraintTop_toBottomOf="@+id/breedLabel" />
+
+</android.support.constraint.ConstraintLayout>
