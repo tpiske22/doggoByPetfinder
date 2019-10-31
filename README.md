@@ -8,6 +8,9 @@ Spring 2019
 
 Doggo by PetFinder
 
+Note**
+You must sign up for a Petfinder API key and add it to the app's String params for the app to function correctly. I'm keeping my own API key out of the public eye.
+
 This app is meant to help users discover adoptable dogs in their area by querying the PetFinder API.
 Upon first launching, you'll be greeted with a welcome message, and if you give the app access to
 your current location, the app will initially search for dogs using your current zip code.
