@@ -1,39 +1,32 @@
 
-proFinal2019
-Taylor Piske
-MPCS51031 Android Development, University of Chicago
-Spring 2019
+Doggo by PetFinder  
 
--------------------
-
-Doggo by PetFinder
-
-Note**
-You must sign up for a Petfinder API key and add it to the app's String params for the app to function correctly. I'm keeping my own API key out of the public eye.
+Note**  
+You must sign up for a Petfinder API key and add it to the app's String params for the app to function correctly.  
 
 This app is meant to help users discover adoptable dogs in their area by querying the PetFinder API.
 Upon first launching, you'll be greeted with a welcome message, and if you give the app access to
-your current location, the app will initially search for dogs using your current zip code.
+your current location, the app will initially search for dogs using your current zip code.  
 
-The app itself is split into four main screens.
+The app itself is split into four main screens.  
 
-Search
+Search  
 Scroll through results from a dog search. Refresh search listings with the refresh button in the
 bottom right. Tap a dog picture to go its detail page, or long press it to bring up a quick-save
 prompt, which will let you save the dog to your saved dog list.
 
-Saved
+Saved  
 Scroll through dogs you've saved to your saved dog list. Delete all saved dogs with the delete all
 button in the bottom right. Tap a dog picture to go to its detail page, or long press it to bring
 up a quick-delete prompt, which will let you remove the dog from your saved dog list.
 
-Settings
+Settings  
 Set your search filters in the settings section. These include zip code, dog gender, dog size, and
 dog age. Press the geolocate button beside the zip code entry box to find your current zip code
 automatically. The option to choose between medium and high resolution image downloading is also 
 available for data-constrained users.
 
-Dog Detail
+Dog Detail  
 By tapping a dog's image, you can view more information about them in the dog detail page. Scroll
 through the dog's description, its health information, and more. The section at the bottom is
 reserved for shelter/owner information. Their phone number can be called directly from the app by
@@ -44,7 +37,7 @@ saved dog list, do so with the add/remove button to the upper right of the dog's
 
 
 
-TOKEN RETRIEVAL FAILURE NOTE:
+TOKEN RETRIEVAL FAILURE NOTE:  
 Retrieving a new access token for API calls occasionally fails on the emulator, saying that host
 www.petfinder.com can't be found, as if you don't have Internet permissions set or a wifi connection.
 Close the emulator and retry if this occurs. This supposedly happens on the emulator if you start 
